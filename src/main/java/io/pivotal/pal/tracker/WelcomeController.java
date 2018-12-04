@@ -11,6 +11,7 @@ public class WelcomeController {
         this.hello = test;
     }
 
+
     private String hello;
 
     @GetMapping("/")
