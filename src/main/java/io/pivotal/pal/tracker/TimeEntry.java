@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class TimeEntry {
 
-
     private long id;
     private long projectId;
     private long userId;
