@@ -22,8 +22,8 @@ public class PalTrackerApplication {
    /* TimeEntryRepository timeEntryRepository() {
         return new InMemoryTimeEntryRepository();
     }*/
-    TimeEntryRepository timeEntryRepository() {
-        MysqlDataSource dataSource = new MysqlDataSource();
+    TimeEntryRepository timeEntryRepository(DataSource dataSource) {
+        //MysqlDataSource dataSource = new MysqlDataSource();
        // dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
         return new JdbcTimeEntryRepository(dataSource);
     }
